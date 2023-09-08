@@ -41,6 +41,8 @@ a {
     min-width: 1440px;
     height: 100vh;
     position: relative;
+    display: flex;
+    flex-direction: column;
 }
 /* =============== Content =============== */
 .content {
@@ -48,11 +50,18 @@ a {
     margin-left: auto;
     margin-right: auto;
 }
-
+.fixed-header {
+    padding-top: 26px;
+    top: -26px;
+    background-color: #E6F0FF;
+    position:sticky;
+    z-index: 1;
+}
 .navbar {
     display: flex;
     align-items: center;
-    padding: 38px 0;
+    padding: 12px 0;
+    /* background-color: #94e26d; */
 }
 .navbar ul {
     display: flex;
