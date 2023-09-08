@@ -36,10 +36,10 @@ a {
     overflow: hidden;
 }
 /* =============== Header ==================== */
-.header {
+.hero-warp {
     background: #e6f0ff;
     min-width: 1440px;
-    height: 100vh;
+    height: calc(100vh - 90px);
     position: relative;
     display: flex;
     flex-direction: column;
