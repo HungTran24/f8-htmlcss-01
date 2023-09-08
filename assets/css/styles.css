@@ -150,10 +150,21 @@ a {
 }
 
 .client .images {
-    margin-top: 96px;
+    margin-top: 70px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+.client .images a {
+    display: flex;
+    align-items: center;
+    padding: 0 42px;
+    height: 90px;
+    border-radius: 12px;
+    /* background-color: #0689ff; */
+}
+.client .images a:hover {
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
 }
 /* ============= Guides ============ */
 .guides {
@@ -563,9 +574,8 @@ a {
 }
 .footer .column .list .item .social {
     margin-top: 40px;
-    width: 117px;
     display: flex;
-    justify-content: space-between;
+    gap: 16px;;
 }
 .footer .column .list .item .social .social-link:hover {
     filter: brightness(90%);
