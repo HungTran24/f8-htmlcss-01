@@ -4,6 +4,10 @@
 :root {
     --primary-color: #0f1b4c;
 }
+html,
+body {
+    scroll-behavior: smooth;
+}
 html {
     font-size: 62.5%;
 }
@@ -43,6 +47,7 @@ a {
     position: relative;
     display: flex;
     flex-direction: column;
+    justify-content: center;
 }
 /* =============== Content =============== */
 .content {
@@ -53,8 +58,8 @@ a {
 .fixed-header {
     padding-top: 26px;
     top: -26px;
-    background-color: #E6F0FF;
-    position:sticky;
+    background-color: #e6f0ff;
+    position: sticky;
     z-index: 1;
 }
 .navbar {
@@ -98,21 +103,18 @@ a {
     border-radius: 8px;
 }
 /* =============== Hero =============== */
-.hero {
-    margin-top: 130px;
-    display: flex;
-}
-.hero .info {
+
+.hero-warp .info {
     max-width: 51%;
 }
-.hero .sub-title {
+.hero-warp .sub-title {
     color: #687690;
     font-family: Poppins;
     font-size: 1.8rem;
     line-height: 1.5;
     letter-spacing: 0.01em;
 }
-.hero .title {
+.hero-warp .title {
     margin-top: 8px;
     color: #000336;
     font-family: Poppins;
@@ -120,7 +122,7 @@ a {
     font-weight: 700;
     line-height: 1.1875;
 }
-.hero .desc {
+.hero-warp .desc {
     color: #5a6473;
     font-family: Poppins;
     font-size: 1.8rem;
@@ -133,7 +135,7 @@ a {
     margin-top: 40px;
     min-width: 170px;
 }
-.hero .hero-img {
+.hero-warp .hero-img {
     position: absolute;
     width: 619px;
     right: calc((100vw - 1110px) / 2 - 100px);
@@ -584,7 +586,7 @@ a {
 .footer .column .list .item .social {
     margin-top: 40px;
     display: flex;
-    gap: 16px;;
+    gap: 16px;
 }
 .footer .column .list .item .social .social-link:hover {
     filter: brightness(90%);
